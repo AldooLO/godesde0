@@ -1,7 +1,12 @@
 package main
 
-import "godesde0/variables"
+import (
+	"fmt"
+	"godesde0/variables"
+)
 
 func main() {
-	variables.MostrarEnteros()
+	estado, texto := variables.ConvertiraTexto(123)
+	fmt.Println(estado)
+	fmt.Println(texto)
 }
