@@ -3,12 +3,13 @@ package main
 import (
 	//"fmt"
 	//"godesde0/variables"
-	"godesde0/files"
+	//"godesde0/funciones"
+	"godesde0/arreglos_slices"
 )
 
 func main() {
 	/*estado, texto := variables.ConvertiraTexto(123)
 	fmt.Println(estado)
 	fmt.Println(texto)*/
-	files.LeerArchivo()
+	arreglos_slices.Capacidad()
 }
