@@ -12,6 +12,13 @@ func MostrarSlices() {
 }
 
 func Capacidad(){
-	elementos := make([]int, 5, 20)
+	elementos := make([]int, 5, 20)  //creacion de un slice que crea el tamaño y capacidad se reserva en memoria para performan
+	//duplica la capacidad cada vez que se queda sin espacio
 	fmt.Printf("tamaño %d, capacidad %d", len(elementos), cap(elementos))
+
+	numeros := make([]int, 0, 0)
+	for i := 0; i < 100; i++{
+		numeros = append(numeros, i)
+	}
+	fmt.Printf("\ntamaño %d, capacidad %d", len(numeros), cap(numeros)) // potencia de 2
 }
