@@ -4,12 +4,12 @@ import (
 	//"fmt"
 	//"godesde0/variables"
 	//"godesde0/funciones"
-	"godesde0/arreglos_slices"
+	"godesde0/mapas"
 )
 
 func main() {
 	/*estado, texto := variables.ConvertiraTexto(123)
 	fmt.Println(estado)
 	fmt.Println(texto)*/
-	arreglos_slices.Capacidad()
+	mapas.MostrarMapas()
 }
