@@ -19,7 +19,11 @@ func main() {
 
 	Sandra := new(modelos.Mujer)
 	fI.HumanoRespirando(Sandra) */
-	go goroutines.MiNombreLento("Sergio Perez")
 
+	canal1 := make(chan bool)
+	go goroutines.MiNombreLento("Sergio Perez", canal1)
+	defer func(){
+		<-canal1
+	}()
 	fmt.Println("Estoy aqui")
 }
