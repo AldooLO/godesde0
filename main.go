@@ -6,8 +6,7 @@ import (
 	//"godesde0/funciones"
 	//"godesde0/modelos"
 	//fI "godesde0/funciones_Interfaces"
-	"fmt"
-	"godesde0/goroutines"
+	"godesde0/webserver"
 )
 
 func main() {
@@ -20,10 +19,11 @@ func main() {
 	Sandra := new(modelos.Mujer)
 	fI.HumanoRespirando(Sandra) */
 
-	canal1 := make(chan bool)
+	/* canal1 := make(chan bool)
 	go goroutines.MiNombreLento("Sergio Perez", canal1)
 	defer func(){
 		<-canal1
 	}()
-	fmt.Println("Estoy aqui")
+	fmt.Println("Estoy aqui") */
+	webserver.MiWebServer()
 }
