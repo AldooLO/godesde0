@@ -6,7 +6,7 @@ import (
 	//"godesde0/funciones"
 	//"godesde0/modelos"
 	//fI "godesde0/funciones_Interfaces"
-	"godesde0/webserver"
+	"godesde0/middleware"
 )
 
 func main() {
@@ -25,5 +25,5 @@ func main() {
 		<-canal1
 	}()
 	fmt.Println("Estoy aqui") */
-	webserver.MiWebServer()
+	middleware.MiMiddleware()
 }
